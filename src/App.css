@@ -1,0 +1,15 @@
+#root {
+  padding-top : 20px;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:link {
+  columns: inherit;
+}

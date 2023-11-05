@@ -1,0 +1,4 @@
+.introduce_person {
+    display: flex;
+    justify-content: space-evenly;
+}

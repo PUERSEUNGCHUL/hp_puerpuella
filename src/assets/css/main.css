@@ -1,0 +1,24 @@
+.main-banner {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.main-banner img {
+    display: none;
+
+    animation-name: bounce; /* 애니메이션 이름 지정 */
+    animation-duration: 4s; /* 애니메이션 지속 시간 */
+    animation-delay: 1s; /* 애니메이션 지연 시간 (선택 사항) */
+    animation-timing-function: ease; /* 애니메이션 타이밍 함수 (선택 사항) */
+    animation-iteration-count: infinite; /* 애니메이션 반복 횟수 (선택 사항) */
+}
+
+@keyframes bounce {
+    0%, 20% {
+        transform: translateY(0); /* 초기 상태 및 중간 상태 */
+    }
+    100% {
+        transform: translateX(-85px); /* 다시 아래로 내려오는 상태 */
+    }
+}
