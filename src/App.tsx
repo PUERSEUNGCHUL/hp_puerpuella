@@ -14,7 +14,7 @@ function App() {
     <>
       <BrowserRouter>
         <Header/>
-        <div className='my-16'>
+        <div className='w-full my-16 flex flex-row justify-center items-center'>
           <Routes>
             <Route path='/' Component={Main}/>
             <Route path='/intro_company' Component={IntroduceCompany}/>

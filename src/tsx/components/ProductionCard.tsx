@@ -1,5 +1,7 @@
 import { GrDocumentCloud } from "react-icons/gr";
+import { MdOutlineSettingsSystemDaydream } from "react-icons/md";
 import '../../../src/assets/css/productionCard.css'
+import { ReactComponentElement, ReactElement } from "react";
 
 interface ProductionCardProps {
     data: ProductionCardData;
@@ -10,6 +12,7 @@ export interface ProductionCardData {
     price: number;
     description: string[];
     grade: number; // 0: 베이직, 1: 프로페셔널, 2: 얼티메이트
+    icon: ReactElement
 }
 
 export const ProductionCard: React.FC<ProductionCardProps> = ({ data }) => {
@@ -27,11 +30,11 @@ export const ProductionCard: React.FC<ProductionCardProps> = ({ data }) => {
             style={{ width: "350px", height: "400px" }}
         >
             <div className="text-3xl">
-                <p>&#8361;{data.price.toLocaleString()}</p>
+                <p>&#8361;{data.price.toLocaleString()} ~ </p>
             </div>
             <div className="flex flex-row justify-between">
                 <div>
-                    <GrDocumentCloud size={150} />
+                    {data.icon}
                     <p>{data.title}</p>
                 </div>
                 <div className="text-sm">
