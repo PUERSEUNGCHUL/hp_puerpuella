@@ -14,14 +14,16 @@ function App() {
     <>
       <BrowserRouter>
         <Header/>
+        <div className='my-16'>
+          <Routes>
+            <Route path='/' Component={Main}/>
+            <Route path='/intro_company' Component={IntroduceCompany}/>
+            <Route path='/intro_work' Component={IntroduceWork}/>
+            <Route path='/intro_person' Component={IntroducePerson}/>
+            <Route path='/access' Component={Access}/>
+          </Routes>
+        </div>
         <Navigator/>
-        <Routes>
-          <Route path='/' Component={Main}/>
-          <Route path='/intro_company' Component={IntroduceCompany}/>
-          <Route path='/intro_work' Component={IntroduceWork}/>
-          <Route path='/intro_person' Component={IntroducePerson}/>
-          <Route path='/access' Component={Access}/>
-        </Routes>
       </BrowserRouter>
     </>
   )

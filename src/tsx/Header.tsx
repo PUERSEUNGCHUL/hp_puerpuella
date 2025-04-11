@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <header>
         <div>
-            <div className="logo"><a href="/">PUERPUELLA</a></div>
-            <div className="head_fnc">
+            <div className="logo"><a href="/">PUERPUELLA STUDIO</a></div>
+            {/* <div className="head_fnc">
                 <div className="search-box">
                     <ul>
                         <li>1. 모바일</li>
@@ -19,8 +19,8 @@ const Header = () => {
                 </div>
                 <div>My page</div>
                 <div>Login</div>
-            </div>
-             
+            </div> */}
+
         </div>
     </header>
   )

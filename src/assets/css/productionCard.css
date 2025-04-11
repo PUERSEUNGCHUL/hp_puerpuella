@@ -1,0 +1,24 @@
+/* 점멸 애니메이션 */
+@keyframes border-fade {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* 베이직 플랜 */
+.animate-border-black {
+    animation: border-fade 1.5s infinite;
+}
+
+/* 프로페셔널 플랜 */
+.animate-border-green {
+    animation: border-fade 1.5s infinite;
+}
+
+/* 얼티메이트 플랜 */
+.animate-border-purple {
+    animation: border-fade 1.5s infinite;
+}
